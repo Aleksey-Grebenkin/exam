@@ -1,40 +1,38 @@
+//
+//  main.cpp
+//  24
+//
+//  Created by user on 11/06/2020.
+//  Copyright © 2020 user. All rights reserved.
+//
+
 #include <iostream>
 
-#include <vector>
+#include <list>
 
-#include "box.h"
+#include "samp.h"
 
 using namespace std;
 
-int main()
-{
-    vector<Box> vectorBox;
+
+int main(int argc, const char * argv[]) {
     
-    Box box1(1,2,3);
-    Box box2(2,1,4);
-    Box box3(3,2,9);
-    
-    vectorBox.push_back(box1);
-    vectorBox.push_back(box2);
-    vectorBox.push_back(box3);
+    list<Samp> listSamp;
     
     for (int i=0;i<3;i++)
     {
-        cout << i+1 << " Коробка" << endl;
-        vectorBox[i].Show();
-        cout << endl;
+        Samp samp;
+        listSamp.push_back(samp);
+        cout<<"cnt=" << Samp::GetCnt()<<endl;
     }
-    
-    vectorBox[0].Repaint(Box::COLOR::BLUE);
-    vectorBox[1].Repaint(Box::COLOR::RED);
-    vectorBox[2].Repaint(Box::COLOR::WHITE);
-    
-    for (int i=0;i<3;i++)
+     
+    cout << endl;
+    for (Samp& obj : listSamp)
     {
-        cout << i+1 << " Коробка" << endl;
-        vectorBox[i].Show();
+        int i;
+        cout << i << " samp" << endl;
+        obj.print();
+        i++;
         cout << endl;
     }
-    
-    return 0;
 }
