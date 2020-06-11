@@ -14,7 +14,7 @@ public:
         BLACK
     };
     
-    Box(int width=0, int length=0, int height=0, COLOR color=COLOR::BLACK);
+    Box(double width=0, double length=0, double height=0, COLOR color=COLOR::BLACK);
     
     void Show();
     
