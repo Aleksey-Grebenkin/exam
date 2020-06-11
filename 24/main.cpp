@@ -1,10 +1,3 @@
-//
-//  main.cpp
-//  24
-//
-//  Created by user on 11/06/2020.
-//  Copyright © 2020 user. All rights reserved.
-//
 
 #include <iostream>
 
