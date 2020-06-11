@@ -1,7 +1,7 @@
 #include "box.h"
 #include "iostream"
 using namespace std;
-Box::Box(int width, int length, int height, COLOR color)
+Box::Box(double width, double length, double height, COLOR color)
 {
     this->width = width;
     this->length = length;
