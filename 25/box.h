@@ -22,11 +22,11 @@ public:
     
 private:
     
-    int width;
+    double width;
     
-    int length;
+    double length;
     
-    int height;
+    double height;
     
     COLOR color;
 };
